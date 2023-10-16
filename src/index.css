@@ -6,8 +6,247 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.outerTodo
+{
+  max-width: 800px;
+  margin: 0 auto;
 }
+.Container
+{
+  margin-top: 50px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  height:100%;
+  box-shadow: 0px 0px 15px 1px rgba(139, 138, 138, 0.833);
+  margin-bottom: 30px;
+}
+.bg1
+{
+  border-top-right-radius: 30px;
+ border-top-left-radius: 30px;
+  background-color: #eb4048;
+  height: 150px;
+  width: 100%;
+}
+
+.bg1 h1{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Vast Shadow', serif;
+}
+.bg2
+{
+  height: 100%;
+  background-color: #F5F5F5;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.taskCreator
+{ 
+    background-color: white;
+    position: relative;
+    left: 12.5%;
+    padding: 30px 40px;
+    top:-10px;
+    width: 75%;
+    height: 100px;
+    border-radius: 20px;
+
+}
+.task
+{
+  padding-top: 100px;
+}
+.Add{
+  border-radius: 50%;
+  padding: 5px 10px;
+  background-color: #eb4048;
+  color: #fff;
+  position:absolute;
+  top:80px;
+  right: 40px;
+  border: hidden;
+  font-weight: bolder;
+}
+.form-check-input[type="checkbox"]:checked
+{
+  background-color: #eb4048;
+  border-color: #eb4048;
+}
+.TaskHeading
+{
+  font-size: 30px;
+  font-family: 'Vast Shadow', serif;
+  text-align: center;
+  padding-bottom: 18px;
+}
+.tasklist
+{
+  display: grid;
+  padding: 8px 0; 
+  grid-template-columns: 40% 40% 20%;
+}
+.grid_space
+{
+  width: 90%;
+  word-wrap: break-word;
+}
+.taskContainer
+{
+  background-color: white;
+  position: relative;
+  left: 12.5%;
+  padding: 20px 10px;
+  width: 75%;
+  border-radius: 20px;
+  height: 100%;
+ 
+}
+.compTaskHead
+{
+  margin: 30px 0;
+  text-align: center;
+  font-family: 'Vast Shadow', serif;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  gap:5px;
+}
+.completed_section
+{
+  padding-bottom: 20px;
+}
+.compTaskHead button
+{
+  border: hidden;
+}
+.Table
+{
+  display: flex;
+  justify-content: space-around;
+}
+.outerNote
+{
+  max-width: 730px; 
+  margin:80px auto 0 auto;
+}
+.ChangeNote
+{
+  border-radius: 30px;
+  position: relative;
+  top: 97px;
+  right: -85%;
+  padding: 2px 12px;
+  border: none;
+}
+.outerNote .ChangeNote
+{
+  position: relative;
+  top: 70px;
+  right: -90%;
+}
+.ChangeNote:hover
+{
+  color: #eb4048;
+}
+.ContainerNote
+{
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 730px;
+  height:100%;
+  box-shadow: 0px 0px 15px 1px rgba(139, 138, 138, 0.833);
+}
+.bg1Note
+{
+  border-top-right-radius: 30px;
+ border-top-left-radius: 30px;
+  background-color: #eb4048;
+  height: 170px;
+  width: 100%;
+}
+
+.bg1Note h1{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Vast Shadow', serif;
+}
+.bg2Note{
+  margin: 140px 0 50px 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #eb4048;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+.form {
+  position: relative;
+  width: 80%;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  top:-20px;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+.form button {
+  position: absolute;
+  right: 50px;
+  bottom: -18px;
+  background: #eb4048;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+

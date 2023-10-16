@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Todo from "./Todo";
+import Notepad from "./Notepad";
+import ChangeTodo from "./ChangeTodo";
+import ChangeNotepad from "./ChangeNotepad";
+export default function App()
+{
+  const [page,setPage]=useState(true); 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  function pageTodo(p)
+  {
+    setPage(p);
+  }
+  function pageNotepad(p)
+  {
+    setPage(p);
+  }
+  return page ? (
+    <div className="outerTodo">
+      <ChangeNotepad change={pageTodo}/>
+      <Todo />
+    </div>
+  ) : (
+    <div className="outerNote">
+    <ChangeTodo change={pageNotepad}/>
+    <Notepad />
     </div>
   );
-}
 
-export default App;
+}
