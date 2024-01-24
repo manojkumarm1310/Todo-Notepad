@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Todo-Notepad/static/css/main.3efbc68c.css",
+    "main.css": "/Todo-Notepad/static/css/main.3d43fe02.css",
     "main.js": "/Todo-Notepad/static/js/main.b3932ff5.js",
     "index.html": "/Todo-Notepad/index.html",
-    "main.3efbc68c.css.map": "/Todo-Notepad/static/css/main.3efbc68c.css.map",
+    "main.3d43fe02.css.map": "/Todo-Notepad/static/css/main.3d43fe02.css.map",
     "main.b3932ff5.js.map": "/Todo-Notepad/static/js/main.b3932ff5.js.map"
   },
   "entrypoints": [
-    "static/css/main.3efbc68c.css",
+    "static/css/main.3d43fe02.css",
     "static/js/main.b3932ff5.js"
   ]
 }
